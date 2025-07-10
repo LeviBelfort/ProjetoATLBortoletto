@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.interface {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* CABEÇALHO */
+
+header {
+    background-color: #002896;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    max-width: 110px;
+    margin: 5px;
+    filter: brightness(0)invert(1);
+}
+
+header img.logo-bortoletto {
+    border: 0;
+}
+
+/* ANUNCIO 1 */
+
+section .anuncio-1{
+    background-color: #e2e2e2;
+    min-height: 200px;
+    padding: 15px;
+}
+
+section .flex{
+    flex-direction: column;
+    gap: 10px
+}
+
+section .anuncio-1 h1{
+    font-size: 2em;
+    color: #002896;
+    font-weight: 600;
+    text-align: center;
+}
+
+section .anuncio-1 p{
+    text-align: center;
+    max-width: 700px;
+}
+
+section .anuncio-1 button{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 20px;
+    width: 200px;
+    background-color: #002896;
+    border: 0;
+    border-radius: 100px;
+    color: #FFF;
+    box-shadow: 0px 8px 8px #00164eab;
+    cursor: pointer;
+    transition: .2s;
+    animation: pulsar 1.5s infinite ease-in-out;
+}
+
+section .anuncio-1 button:hover{
+    background-color: #001858;
+    animation: none;
+    scale: 1.1;
+}
+
+@keyframes pulsar{
+    0%, 100%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+}
+
+/* PLANO DE NEGÓCIO */
+
+section .plano-de-negocio{
+    margin-top: 40px;
+    margin: 40px;
+}
+
+.plano-de-negocio .apresentacao-video {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9; /* proporção do vídeo */
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #414141;
+    overflow: hidden;
+}
+
+.plano-de-negocio .apresentacao-video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    top: 0;
+    left: 0;
+}
