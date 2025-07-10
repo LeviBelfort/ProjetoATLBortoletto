@@ -190,7 +190,9 @@ h2 {
 }
 
 @keyframes flutuar {
-    0%, 100% {
+
+    0%,
+    100% {
         top: 0;
     }
 
@@ -245,8 +247,12 @@ h2 {
         flex-direction: column-reverse;
     }
 
+    .plano-de-negocio .img-sobre {
+        max-width: 300px;
+    }
+
     .plano-de-negocio .img-sobre img {
-    max-width: 400px;
-    width: 100%;
-}
+        max-width: 400px;
+        width: 100%;
+    }
 }
