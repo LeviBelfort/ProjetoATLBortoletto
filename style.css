@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .interface {
@@ -15,6 +15,30 @@
     align-items: center;
     justify-content: center;
 }
+
+.btn-cadastrar {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 20px;
+    max-width: 200px;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.8em;
+}
+
 /* CABEÇALHO */
 
 header {
@@ -27,6 +51,7 @@ header {
 
 header img {
     max-width: 110px;
+    width: 80%;
     margin: 5px;
     filter: brightness(0)invert(1);
 }
@@ -35,77 +60,86 @@ header img.logo-bortoletto {
     border: 0;
 }
 
+
 /* ANUNCIO 1 */
 
-section .anuncio-1{
-    background-color: #e2e2e2;
-    min-height: 200px;
+.anuncio-1 {
+    background-color: #F4F4F4;
+    min-height: 250px;
     padding: 15px;
 }
 
-section .flex{
+.anuncio-1 .flex {
     flex-direction: column;
     gap: 10px
 }
 
-section .anuncio-1 h1{
-    font-size: 2em;
+.anuncio-1 h1 {
     color: #002896;
-    font-weight: 600;
-    text-align: center;
 }
 
-section .anuncio-1 p{
+.anuncio-1 p {
+    color: #444444;
     text-align: center;
     max-width: 700px;
 }
 
-section .anuncio-1 button{
-    font-size: 1.2em;
-    font-weight: 600;
+.anuncio-1 .btn-cadastrar {
     margin-top: 10px;
-    padding: 20px;
-    width: 200px;
     background-color: #002896;
-    border: 0;
-    border-radius: 100px;
     color: #FFF;
     box-shadow: 0px 8px 8px #00164eab;
-    cursor: pointer;
     transition: .2s;
     animation: pulsar 1.5s infinite ease-in-out;
 }
 
-section .anuncio-1 button:hover{
+.anuncio-1 .btn-cadastrar:hover {
     background-color: #001858;
     animation: none;
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
-@keyframes pulsar{
-    0%, 100%{
+@keyframes pulsar {
+
+    0%,
+    100% {
         transform: scale(1);
     }
 
-    50%{
+    50% {
         transform: scale(1.1);
     }
 }
 
 /* PLANO DE NEGÓCIO */
 
-section .plano-de-negocio{
-    margin-top: 40px;
-    margin: 40px;
+.plano-de-negocio {
+    background-color: #1C1C1C;
+    padding: 40px 10px;
+}
+
+.plano-de-negocio .flex {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.plano-de-negocio h1, h2{
+    color: #ffbc36;
+}
+
+.plano-de-negocio p{
+    color: #CCC;
 }
 
 .plano-de-negocio .apresentacao-video {
     position: relative;
+    margin-bottom: 30px;
     width: 100%;
     max-width: 800px;
-    aspect-ratio: 16 / 9; /* proporção do vídeo */
+    aspect-ratio: 16 / 9;
+    /* proporção do vídeo */
     border-radius: 15px;
-    box-shadow: 0px 0px 10px #414141;
+    animation: pulsar-shadow 2s infinite ease alternate;
     overflow: hidden;
 }
 
@@ -116,4 +150,60 @@ section .plano-de-negocio{
     border: 0;
     top: 0;
     left: 0;
+}
+
+.plano-de-negocio .sobre-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.plano-de-negocio .img-sobre {
+    background-color: #444444;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 4;
+    border-radius: 20px;
+}
+
+.plano-de-negocio .txt-sobre{
+    text-wrap: wrap;
+}
+
+
+@keyframes pulsar-shadow {
+    0% {
+        box-shadow: 0px 0px 50px #002896;
+        ;
+    }
+
+    100% {
+        box-shadow: 0px 0px 25px #002896;
+        ;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header img {
+        width: 50%;
+    }
+
+    .anuncio-1 h1 {
+        font-size: 1.5em;
+    }
+
+    .btn-cadastrar {
+        width: 100%;
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    .interface {
+        padding: 0 10px;
+    }
+
+    .plano-de-negocio .sobre-box{
+        flex-direction: column;
+    }
 }
