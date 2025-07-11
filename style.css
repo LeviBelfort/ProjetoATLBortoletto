@@ -1,3 +1,5 @@
+/* GERAL */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -17,6 +19,9 @@
 }
 
 .btn-cadastrar {
+    background-color: #002B7F;
+    color: #FFF;
+    box-shadow: 0px 8px 8px #00164eab;
     text-decoration: none;
     text-align: center;
     font-size: 1.2em;
@@ -27,6 +32,10 @@
     border: 0;
     cursor: pointer;
     border-radius: 100px;
+}
+
+.btn-cadastrar:hover {
+    background-color: #3C71E1;
 }
 
 h1 {
@@ -44,7 +53,9 @@ h3 {
     font-size: 1.5em;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     color: #002B7F;
 }
 
@@ -97,10 +108,6 @@ header img.logo-bortoletto {
     box-shadow: 0px 8px 8px #00164eab;
     transition: .2s;
     animation: pulsar 1.5s infinite ease-in-out;
-}
-
-.anuncio-1 .btn-cadastrar:hover {
-    background-color: #3C71E1;
 }
 
 @keyframes pulsar {
@@ -159,7 +166,7 @@ header img.logo-bortoletto {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1f1f1f;
+    background-color: #dbdbdb;
     box-shadow: 0 0px 30px #cccccc41;
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
@@ -171,8 +178,18 @@ header img.logo-bortoletto {
     width: 400px;
 }
 
+.plano-de-negocio .txt-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.plano-de-negocio .txt-sobre .btn-cadastrar {
+    align-self: self-end;
+}
+
 .plano-de-negocio .txt-sobre p {
-    margin-top: 5px;
     text-align: justify;
     white-space: pre-line;
 }
@@ -231,11 +248,16 @@ header img.logo-bortoletto {
     }
 
     .plano-de-negocio .img-sobre {
-        max-width: 300px;
+        max-width: 220px;
     }
 
     .plano-de-negocio .img-sobre img {
         max-width: 400px;
         width: 100%;
+    }
+
+    .plano-de-negocio .txt-sobre .btn-cadastrar {
+        margin-top: 20px;
+        align-self: center;
     }
 }
