@@ -5,10 +5,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-head {
-    background-color: #F4F4F4;
-}
-
 .interface {
     max-width: 1000px;
     margin: 0 auto;
@@ -44,15 +40,23 @@ h2 {
     font-size: 1.8em;
 }
 
+h3 {
+    font-size: 1.5em;
+}
+
+h1, h2, h3{
+    color: #002B7F;
+}
+
 p {
     font-size: 1.1em;
     line-height: 20px;
+    color: #2B2B2B;
 }
 
 /* CABEÇALHO */
-
 header {
-    background-color: #002896;
+    background-color: #002B7F;
     height: 80px;
     display: flex;
     align-items: center;
@@ -69,9 +73,7 @@ header img.logo-bortoletto {
     border: 0;
 }
 
-
 /* ANUNCIO 1 */
-
 .anuncio-1 {
     min-height: 250px;
     padding: 15px;
@@ -79,22 +81,18 @@ header img.logo-bortoletto {
 
 .anuncio-1 .flex {
     flex-direction: column;
-    gap: 10px
-}
-
-.anuncio-1 h1 {
-    color: #002896;
+    gap: 10px;
 }
 
 .anuncio-1 p {
-    color: #444444;
+    color: #2B2B2B;
     text-align: center;
     max-width: 700px;
 }
 
 .anuncio-1 .btn-cadastrar {
     margin-top: 10px;
-    background-color: #002896;
+    background-color: #002B7F;
     color: #FFF;
     box-shadow: 0px 8px 8px #00164eab;
     transition: .2s;
@@ -102,7 +100,7 @@ header img.logo-bortoletto {
 }
 
 .anuncio-1 .btn-cadastrar:hover {
-    background-color: #001858;
+    background-color: #3C71E1;
 }
 
 @keyframes pulsar {
@@ -118,9 +116,9 @@ header img.logo-bortoletto {
 }
 
 /* PLANO DE NEGÓCIO */
-
 .plano-de-negocio {
-    background-color: #1C1C1C;
+    background-color: #e6e6e6;
+    border-radius: 20px;
     padding: 40px 10px;
 }
 
@@ -129,22 +127,12 @@ header img.logo-bortoletto {
     gap: 30px;
 }
 
-.plano-de-negocio h1,
-h2 {
-    color: #ffbc36;
-}
-
-.plano-de-negocio p {
-    color: #CCC;
-}
-
 .plano-de-negocio .apresentacao-video {
     position: relative;
     margin-bottom: 30px;
     width: 100%;
     max-width: 800px;
     aspect-ratio: 16 / 9;
-    /* proporção do vídeo */
     border-radius: 15px;
     animation: pulsar-shadow 2s infinite ease alternate;
     overflow: hidden;
@@ -204,19 +192,14 @@ h2 {
 @keyframes pulsar-shadow {
     0% {
         box-shadow: 0px 0px 50px #002896;
-        ;
     }
 
     100% {
         box-shadow: 0px 0px 25px #002896;
-        ;
     }
 }
 
-
-
 @media (max-width: 600px) {
-
     header img {
         width: 50%;
     }
