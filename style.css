@@ -249,6 +249,7 @@ header img.logo-bortoletto {
 .vantagens-bortoletto p{
     margin: 0 auto;
     max-width: 700px;
+    text-align: center;
 }
 
 .vantagens-box {
@@ -272,6 +273,10 @@ header img.logo-bortoletto {
 .vantagens-bortoletto .vantagens-box i {
     font-size: 70px;
     color: #002896;
+}
+
+.vantagens-bortoletto .vantagens-box P {
+    text-align: left;
 }
 
 .vantagens-bortoletto .vantagens-box h3 {
@@ -318,15 +323,15 @@ header img.logo-bortoletto {
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
 
     h3 {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     p {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     .btn-cadastrar {
