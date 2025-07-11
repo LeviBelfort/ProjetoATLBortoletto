@@ -40,6 +40,34 @@
     background-color: #3C71E1;
 }
 
+.info-box {
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    border: 2px solid #0000000e;
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.info-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #4e4e4e2d;
+}
+
+.info-box h3 {
+    color: #2B2B2B;
+    font-size: 28px;
+    margin: 15px 0px;
+}
+
+.info-box i {
+    font-size: 70px;
+}
+
 .whatsapp-fixo {
   position: fixed;
   color: #FFF;
@@ -55,6 +83,21 @@
 
 .whatsapp-fixo:hover {
   transform: scale(1.1);
+}
+
+.icone-perfume {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: #002B7F; /* Cor do ícone */
+  mask-image: url('images/perfume-svgrepo-com.svg'); /* Caminho do seu SVG */
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: url('images/perfume-svgrepo-com.svg');
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
 }
 
 h2 span{
@@ -252,39 +295,31 @@ header img.logo-bortoletto {
     text-align: center;
 }
 
-.vantagens-box {
-    padding: 40px;
-    border-radius: 20px;
-    margin-top: 45px;
-    transition: .2s;
-    border: 2px solid #0000000e;
-    flex: 1;
-    min-width: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.vantagens-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #4e4e4e2d;
-}
-
-.vantagens-bortoletto .vantagens-box i {
-    font-size: 70px;
+.vantagens-bortoletto .info-box i {
     color: #002896;
 }
 
-.vantagens-bortoletto .vantagens-box P {
+.info-box P {
     text-align: left;
 }
 
-.vantagens-bortoletto .vantagens-box h3 {
+.vantagens-bortoletto .info-box h3 {
     color: #2B2B2B;
-    font-size: 28px;
-    margin: 15px 0px;
 }
 
+/* GANHOS BORTOLETTO */
+
+.ganhos-bortoletto {
+    padding: 20px 4%;
+}
+
+.ganhos-bortoletto .flex {
+    flex-direction: row;
+    gap: 15px;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 
 /* ANIMAÇÕES */
