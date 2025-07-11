@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .btn-cadastrar {
@@ -32,21 +33,27 @@
     border: 0;
     cursor: pointer;
     border-radius: 100px;
+    transition: .2s;
 }
 
 .btn-cadastrar:hover {
     background-color: #3C71E1;
 }
 
+h2 span{
+    color: #535353;
+}
+
 h1 {
     font-size: 2em;
     font-weight: 700;
     text-align: center;
-    line-height: 25px;
 }
 
 h2 {
+    text-align: center;
     font-size: 1.8em;
+
 }
 
 h3 {
@@ -57,6 +64,7 @@ h1,
 h2,
 h3 {
     color: #002B7F;
+    line-height: 25px;
 }
 
 p {
@@ -72,6 +80,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+header .flex{
+    flex-direction: row;
 }
 
 header img {
@@ -91,7 +103,6 @@ header img.logo-bortoletto {
 }
 
 .anuncio-1 .flex {
-    flex-direction: column;
     gap: 10px;
 }
 
@@ -103,10 +114,6 @@ header img.logo-bortoletto {
 
 .anuncio-1 .btn-cadastrar {
     margin-top: 10px;
-    background-color: #002B7F;
-    color: #FFF;
-    box-shadow: 0px 8px 8px #00164eab;
-    transition: .2s;
     animation: pulsar 1.5s infinite ease-in-out;
 }
 
@@ -130,7 +137,6 @@ header img.logo-bortoletto {
 }
 
 .plano-de-negocio .flex {
-    flex-direction: column;
     gap: 30px;
 }
 
@@ -176,6 +182,11 @@ header img.logo-bortoletto {
 
 .plano-de-negocio .img-sobre img {
     width: 400px;
+    transition: .5s;
+}
+
+.plano-de-negocio .img-sobre img:hover {
+    transform: scale(1.2);
 }
 
 .plano-de-negocio .txt-sobre {
@@ -189,10 +200,72 @@ header img.logo-bortoletto {
     align-self: self-end;
 }
 
+.plano-de-negocio .txt-sobre .btn-cadastrar:hover{
+    transform: scale(1.1);
+}
+
 .plano-de-negocio .txt-sobre p {
     text-align: justify;
     white-space: pre-line;
+    margin-bottom: 15px;
 }
+
+/* VANTAGENS BORTOLETTO */
+    
+.vantagens-bortoletto {
+    padding: 40px 4%;
+}
+
+.vantagens-bortoletto .flex {
+    flex-direction: row;
+    gap: 15px;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.vantagens-bortoletto h2{
+    margin: 10px 0;
+}
+
+.vantagens-bortoletto p{
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.vantagens-box {
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    border: 2px solid #0000000e;
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.vantagens-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #4e4e4e2d;
+}
+
+.vantagens-bortoletto .vantagens-box i {
+    font-size: 70px;
+    color: #002896;
+}
+
+.vantagens-bortoletto .vantagens-box h3 {
+    color: #2B2B2B;
+    font-size: 28px;
+    margin: 15px 0px;
+}
+
+
+
+/* ANIMAÇÕES */
 
 @keyframes flutuar {
 
@@ -216,17 +289,23 @@ header img.logo-bortoletto {
     }
 }
 
-@media (max-width: 600px) {
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1020px) {
     header img {
         width: 50%;
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     h2 {
-        font-size: 1.2em;
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1em;
     }
 
     p {
@@ -257,7 +336,11 @@ header img.logo-bortoletto {
     }
 
     .plano-de-negocio .txt-sobre .btn-cadastrar {
-        margin-top: 20px;
         align-self: center;
     }
+
+    .vantagens-bortoletto .flex{
+        flex-direction: column;
+    }
+
 }
