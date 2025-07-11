@@ -40,6 +40,23 @@
     background-color: #3C71E1;
 }
 
+.whatsapp-fixo {
+  position: fixed;
+  color: #FFF;
+  font-size: 18px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #002B7F;
+  border-radius: 50%;
+  padding: 10px 15px;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-fixo:hover {
+  transform: scale(1.1);
+}
+
 h2 span{
     color: #535353;
 }
