@@ -1,81 +1,95 @@
-/* GERAL */
+/* ========================
+   VARIÁVEIS DE COR (ROOT)
+========================= */
+:root {
+  --cor-primaria: #002B7F;
+  --cor-secundaria: #3C71E1;
+  --cor-destaque: #002896;
+  --cor-texto: #2B2B2B;
+  --cor-branco: #FFFFFF;
+  --cor-cinza-claro: #e6e6e6;
+  --cor-cinza-box: #dbdbdb;
+  --cor-sombra: rgba(0, 0, 0, 0.3);
+  --cor-box-shadow: #4e4e4e2d;
+}
 
+/* GERAL */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .interface {
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .btn-cadastrar {
-    background-color: #002B7F;
-    color: #FFF;
-    box-shadow: 0px 8px 8px #00164eab;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 600;
-    padding: 20px;
-    max-width: 200px;
-    width: 100%;
-    border: 0;
-    cursor: pointer;
-    border-radius: 100px;
-    transition: .2s;
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  box-shadow: 0px 8px 8px rgba(0, 22, 78, 0.67);
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 20px;
+  max-width: 200px;
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: .2s;
 }
 
 .btn-cadastrar:hover {
-    background-color: #3C71E1;
+  background-color: var(--cor-secundaria);
 }
 
 .info-box {
-    padding: 40px;
-    border-radius: 20px;
-    margin-top: 45px;
-    transition: .2s;
-    border: 2px solid #0000000e;
-    flex: 1;
-    min-width: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 45px;
+  transition: .2s;
+  border: 2px solid #0000000e;
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .info-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #4e4e4e2d;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--cor-box-shadow);
 }
 
 .info-box h3 {
-    color: #2B2B2B;
-    font-size: 28px;
-    margin: 15px 0px;
+  color: var(--cor-texto);
+  font-size: 28px;
+  margin: 15px 0px;
 }
 
 .info-box i {
-    font-size: 70px;
+  font-size: 70px;
 }
 
 .whatsapp-fixo {
   position: fixed;
-  color: #FFF;
+  color: var(--cor-branco);
   font-size: 18px;
   bottom: 20px;
   right: 20px;
   z-index: 9999;
-  background-color: #002B7F;
+  background-color: var(--cor-primaria);
   border-radius: 50%;
   padding: 10px 15px;
   transition: transform 0.3s ease;
@@ -89,8 +103,8 @@
   display: inline-block;
   width: 80px;
   height: 80px;
-  background-color: #002B7F; /* Cor do ícone */
-  mask-image: url('images/perfume-svgrepo-com.svg'); /* Caminho do seu SVG */
+  background-color: var(--cor-primaria);
+  mask-image: url('images/perfume-svgrepo-com.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;
@@ -100,304 +114,291 @@
   -webkit-mask-position: center;
 }
 
-h2 span{
-    color: #535353;
+h2 span {
+  color: #535353;
 }
 
 h1 {
-    font-size: 2em;
-    font-weight: 700;
-    text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
 }
 
 h2 {
-    text-align: center;
-    font-size: 1.8em;
-
+  text-align: center;
+  font-size: 1.8em;
 }
 
 h3 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 h1,
 h2,
 h3 {
-    color: #002B7F;
-    line-height: 25px;
+  color: var(--cor-primaria);
+  line-height: 25px;
 }
 
 p {
-    font-size: 1.1em;
-    line-height: 20px;
-    color: #2B2B2B;
+  font-size: 1.1em;
+  line-height: 20px;
+  color: var(--cor-texto);
 }
 
 /* CABEÇALHO */
 header {
-    background-color: #002B7F;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: var(--cor-primaria);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-header .flex{
-    flex-direction: row;
+header .flex {
+  flex-direction: row;
 }
 
 header img {
-    max-width: 110px;
-    width: 80%;
-    margin: 5px;
+  max-width: 110px;
+  width: 80%;
+  margin: 5px;
 }
 
 header img.logo-bortoletto {
-    border: 0;
+  border: 0;
 }
 
 /* ANUNCIO 1 */
 .anuncio-1 {
-    min-height: 250px;
-    padding: 15px;
+  min-height: 250px;
+  padding: 15px;
 }
 
 .anuncio-1 .flex {
-    gap: 10px;
+  gap: 10px;
 }
 
 .anuncio-1 p {
-    color: #2B2B2B;
-    text-align: center;
-    max-width: 700px;
+  color: var(--cor-texto);
+  text-align: center;
+  max-width: 700px;
 }
 
 .anuncio-1 .btn-cadastrar {
-    margin-top: 10px;
-    animation: pulsar 1.5s infinite ease-in-out;
+  margin-top: 10px;
+  animation: pulsar 1.5s infinite ease-in-out;
 }
 
 @keyframes pulsar {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 /* PLANO DE NEGÓCIO */
 .plano-de-negocio {
-    background-color: #e6e6e6;
-    border-radius: 20px;
-    padding: 40px 10px;
+  background-color: var(--cor-cinza-claro);
+  border-radius: 20px;
+  padding: 40px 10px;
 }
 
 .plano-de-negocio .flex {
-    gap: 30px;
+  gap: 30px;
 }
 
 .plano-de-negocio .apresentacao-video {
-    position: relative;
-    margin-bottom: 30px;
-    width: 100%;
-    max-width: 800px;
-    aspect-ratio: 16 / 9;
-    border-radius: 15px;
-    animation: pulsar-shadow 2s infinite ease alternate;
-    overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  border-radius: 15px;
+  animation: pulsar-shadow 2s infinite ease alternate;
+  overflow: hidden;
 }
 
 .plano-de-negocio .apresentacao-video iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    top: 0;
-    left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  top: 0;
+  left: 0;
 }
 
 .plano-de-negocio .sobre-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
 }
 
 .plano-de-negocio .img-sobre {
-    border-radius: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #dbdbdb;
-    box-shadow: 0 0px 30px #cccccc41;
-    position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
-    max-width: 400px;
-    width: 100%;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-cinza-box);
+  box-shadow: 0 0px 30px #cccccc41;
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+  max-width: 400px;
+  width: 100%;
 }
 
 .plano-de-negocio .img-sobre img {
-    width: 400px;
-    transition: .5s;
+  width: 400px;
+  transition: .5s;
 }
 
 .plano-de-negocio .img-sobre img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .plano-de-negocio .txt-sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .plano-de-negocio .txt-sobre .btn-cadastrar {
-    align-self: self-end;
+  align-self: self-end;
 }
 
-.plano-de-negocio .txt-sobre .btn-cadastrar:hover{
-    transform: scale(1.1);
+.plano-de-negocio .txt-sobre .btn-cadastrar:hover {
+  transform: scale(1.1);
 }
 
 .plano-de-negocio .txt-sobre p {
-    text-align: justify;
-    white-space: pre-line;
-    margin-bottom: 15px;
+  text-align: justify;
+  white-space: pre-line;
+  margin-bottom: 15px;
 }
 
 /* VANTAGENS BORTOLETTO */
-    
 .vantagens-bortoletto {
-    padding: 40px 4%;
+  padding: 40px 4%;
 }
 
 .vantagens-bortoletto .flex {
-    flex-direction: row;
-    gap: 15px;
-    align-items: stretch;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  flex-direction: row;
+  gap: 15px;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-
-.vantagens-bortoletto h2{
-    margin: 10px 0;
+.vantagens-bortoletto h2 {
+  margin: 10px 0;
 }
 
-.vantagens-bortoletto p{
-    margin: 0 auto;
-    max-width: 700px;
-    text-align: center;
+.vantagens-bortoletto p {
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: center;
 }
 
 .vantagens-bortoletto .info-box i {
-    color: #002896;
+  color: var(--cor-destaque);
 }
 
-.info-box P {
-    text-align: left;
+.info-box p {
+  text-align: left;
 }
 
 .vantagens-bortoletto .info-box h3 {
-    color: #2B2B2B;
+  color: var(--cor-texto);
 }
 
 /* GANHOS BORTOLETTO */
-
 .ganhos-bortoletto {
-    padding: 20px 4%;
+  padding: 20px 4%;
 }
 
 .ganhos-bortoletto .flex {
-    flex-direction: row;
-    gap: 15px;
-    align-items: stretch;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  flex-direction: row;
+  gap: 15px;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-
 /* ANIMAÇÕES */
-
 @keyframes flutuar {
-
-    0%,
-    100% {
-        top: 0;
-    }
-
-    50% {
-        top: 20px;
-    }
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: 20px;
+  }
 }
 
 @keyframes pulsar-shadow {
-    0% {
-        box-shadow: 0px 0px 50px #002896;
-    }
-
-    100% {
-        box-shadow: 0px 0px 25px #002896;
-    }
+  0% {
+    box-shadow: 0px 0px 50px var(--cor-destaque);
+  }
+  100% {
+    box-shadow: 0px 0px 25px var(--cor-destaque);
+  }
 }
 
 /* RESPONSIVIDADE */
-
 @media screen and (max-width: 1020px) {
-    header img {
-        width: 50%;
-    }
+  header img {
+    width: 50%;
+  }
 
-    h1 {
-        font-size: 1.8em;
-    }
+  h1 {
+    font-size: 1.8em;
+  }
 
-    h2 {
-        font-size: 1.6em;
-    }
+  h2 {
+    font-size: 1.6em;
+  }
 
-    h3 {
-        font-size: 1.3em;
-    }
+  h3 {
+    font-size: 1.3em;
+  }
 
-    p {
-        font-size: 0.8em;
-    }
+  p {
+    font-size: 0.8em;
+  }
 
-    .btn-cadastrar {
-        width: 100%;
-        padding: 15px;
-        font-size: 1em;
-    }
+  .btn-cadastrar {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+  }
 
-    .interface {
-        padding: 0 10px;
-    }
+  .interface {
+    padding: 0 10px;
+  }
 
-    .plano-de-negocio .sobre-box {
-        flex-direction: column-reverse;
-    }
+  .plano-de-negocio .sobre-box {
+    flex-direction: column-reverse;
+  }
 
-    .plano-de-negocio .img-sobre {
-        max-width: 220px;
-    }
+  .plano-de-negocio .img-sobre {
+    max-width: 220px;
+  }
 
-    .plano-de-negocio .img-sobre img {
-        max-width: 400px;
-        width: 100%;
-    }
+  .plano-de-negocio .img-sobre img {
+    max-width: 400px;
+    width: 100%;
+  }
 
-    .plano-de-negocio .txt-sobre .btn-cadastrar {
-        align-self: center;
-    }
+  .plano-de-negocio .txt-sobre .btn-cadastrar {
+    align-self: center;
+  }
 
-    .vantagens-bortoletto .flex{
-        flex-direction: column;
-    }
-
+  .vantagens-bortoletto .flex {
+    flex-direction: column;
+  }
 }
